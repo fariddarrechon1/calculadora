@@ -5,7 +5,7 @@ public class MiCalculadora {
 		Integer a;
 		Integer b;
 		Integer opcion;
-		Integer resultado;
+		Integer resultado=0;
 		
 		Scanner teclado= new Scanner(System.in);
 		do{
@@ -22,20 +22,27 @@ public class MiCalculadora {
 		System.out.println("Ingrese el segundo numero");
 		b = teclado.nextInt();
 		
-		if(opcion.equals(1)){
+		switch (opcion){
+		case 1:
 		resultado = a + b;
+		break;
 		
-		}else if(opcion.equals(2)){
+		case 2:
 		resultado = a - b;
+		break;
 		
-		}else if(opcion.equals(3)){
+		case 3:
 		resultado = a * b;
+		break;
 		
-		}else{
+		case 4:
 		resultado = a / b;
+		break;
+		
+		}
+		System.out.println("El resultado es " + resultado.toString());
+		
 		}
 		
-		System.out.println("El resultado es " + resultado.toString());
-		}
 	
 }
