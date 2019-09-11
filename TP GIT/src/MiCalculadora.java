@@ -23,19 +23,19 @@ public class MiCalculadora {
 		b = teclado.nextInt();
 		
 		switch (opcion){
-		case 1:
+		case 5:
 		resultado = a + b;
 		break;
 		
-		case 2:
+		case 1:
 		resultado = a - b;
 		break;
 		
-		case 3:
+		case 4:
 		resultado = a * b;
 		break;
 		
-		case 4:
+		case 3:
 		resultado = a / b;
 		break;
 		
